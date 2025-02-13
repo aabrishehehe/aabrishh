@@ -1,0 +1,78 @@
+
+<html lang="en">
+<head> OPEN ME! </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envelope Surprise</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fce4ec;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            position: relative;
+            text-align: center;
+        }
+        .envelope {
+            width: 200px;
+            height: 120px;
+            background: #ff8a80;
+            position: relative;
+            border-radius: 10px;
+        }
+        .flap {
+            width: 0;
+            height: 0;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-bottom: 60px solid #ff5252;
+            position: absolute;
+            top: -60px;
+            left: 0;
+        }
+        .paper {
+            width: 180px;
+            height: 150px;
+            background: white;
+            position: absolute;
+            top: 20px;
+            left: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            display: none;
+            padding: 10px;
+            font-size: 14px;
+        }
+        .open-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #ff4081;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="envelope">
+            <div class="flap"></div>
+            <div class="paper" id="message">
+               elo bbg :D this is an apology because i'm a very shitty person and i hurt your feelings that was not very sigma sigma boi of me im so sorry but i still love u sm hope u forgive me :)(cried while making this lmao)
+            </div>
+        </div>
+        <button class="open-btn" onclick="openEnvelope()">Open</button>
+    </div>
+
+    <script>
+        function openEnvelope() {
+            document.getElementById('message').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
